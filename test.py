@@ -20,8 +20,8 @@ for item in z[0]:
     if(a[0][n['id']]) :
         n['text'] = a[0][n['id']]
     array.append(n)
-    e = json.dumps(array, ensure_ascii=False,indent=4)
-    with open('dialect.json', 'w', encoding='utf-8') as file_obj:
+    e = json.dumps(array,indent=4)
+    with open('dialect.json', 'w') as file_obj:
         file_obj.write(e)  
 
 
